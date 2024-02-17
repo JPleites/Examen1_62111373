@@ -53,9 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('Lista de Libros'),
       ),
       body: Container(
-        // Color de fondo para toda la pantalla
-        color:
-            Color.fromARGB(255, 110, 197, 255), // Cambia aquí el color de fondo
+        color: Color.fromARGB(255, 110, 197, 255),
         child: ListView.builder(
           itemCount: dataList.length,
           itemBuilder: (BuildContext context, int id) {
@@ -94,9 +92,7 @@ class DetailScreen extends StatelessWidget {
         title: const Text('Detalles'),
       ),
       body: Container(
-        // Color de fondo para la pantalla de detalles
-        color:
-            Color.fromARGB(255, 255, 109, 25), // Cambia aquí el color de fondo
+        color: Color.fromARGB(255, 255, 109, 25),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
