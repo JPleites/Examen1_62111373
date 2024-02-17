@@ -18,5 +18,85 @@
       "ISBN": "978-0-385-00751-1",
       "Pages": "439",
       "villains": "Kurt Barlow"
+  },
+  {
+    "id": 3,
+      "Year": "1977",
+      "Title": "The Shining",
+      "handle": "the-shining",
+      "Publisher": "Doubleday",
+      "ISBN": "978-0-385-12167-5",
+      "Pages": "447",
+      "villains": "Horace M. Derwent"
+  },
+  {
+    "id": 4,
+      "Year": "1977",
+      "Title": "Rage",
+      "handle": "rage",
+      "Publisher": "Signet Books",
+      "ISBN": "978-0-451-07645-8",
+      "Pages": "211",
+      "villains": "MC"
+  },
+  {
+    "id": 5,
+      "Year": "1978",
+      "Title": "The Stand",
+      "handle": "the-stand",
+      "Publisher": "Doubleday",
+      "ISBN": "978-0-385-12168-2",
+      "Pages": "823",
+      "villains": "Donald Merwin Elbert"
+  },
+  {
+    "id": 6,
+      "Year": "1979",
+      "Title": "The Long Walk",
+      "handle": "the-long-walk",
+      "Publisher": "Signet Books",
+      "ISBN": "978-0-451-08754-6",
+      "Pages": "384",
+      "villains": "Randall Flagg"
+  },
+  {
+    "id": 7,
+      "Year": "1979",
+      "Title": "The Dead Zone",
+      "handle": "the-dead-zone",
+      "Publisher": "Viking Press",
+      "ISBN": "978-0-670-26077-5",
+      "Pages": "428",
+      "villains": "Frank Dodd"
+  },
+  {
+    "id": 8,
+      "Year": "1980",
+      "Title": "Firestarter",
+      "handle": "firestarter",
+      "Publisher": "Viking Press",
+      "ISBN": "978-0-670-31541-3",
+      "Pages": "426",
+      "villains": "James Hollister"
+  },
+  {
+    "id": 9,
+      "Year": "1981",
+      "Title": "Roadwork",
+      "handle": "roadwork",
+      "Publisher": "Signet Books",
+      "ISBN": "978-0-451-09668-5",
+      "Pages": "274",
+      "villains": "Ninguno"
+  },
+  {
+    "id": 10,
+      "Year": "1981",
+      "Title": "Cujo",
+      "handle": "cujo",
+      "Publisher": "Viking Press",
+      "ISBN": "978-0-670-45193-7",
+      "Pages": "319",
+      "villains": "Cujo"
   }
 ]

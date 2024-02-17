@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
 }
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({Key? key});
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -49,27 +49,33 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 50, 216, 28),
         title: const Text('Lista de Libros'),
       ),
-      body: ListView.builder(
-        itemCount: dataList.length,
-        itemBuilder: (BuildContext context, int id) {
-          return GestureDetector(
-            onTap: () {
-              // Abrir la nueva ventana y pasar los datos del elemento seleccionado
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => DetailScreen(item: dataList[id]),
-                ),
-              );
-            },
-            child: ListTile(
-              title: Text(dataList[id]['Title']),
-              subtitle: Text(dataList[id]['Publisher']),
-            ),
-          );
-        },
+      body: Container(
+        // Color de fondo para toda la pantalla
+        color:
+            Color.fromARGB(255, 110, 197, 255), // Cambia aquí el color de fondo
+        child: ListView.builder(
+          itemCount: dataList.length,
+          itemBuilder: (BuildContext context, int id) {
+            return GestureDetector(
+              onTap: () {
+                // Abrir la nueva ventana y pasar los datos del elemento seleccionado
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailScreen(item: dataList[id]),
+                  ),
+                );
+              },
+              child: ListTile(
+                title: Text(dataList[id]['Title']),
+                subtitle: Text(dataList[id]['Publisher']),
+              ),
+            );
+          },
+        ),
       ),
     );
   }
@@ -78,26 +84,32 @@ class _HomeScreenState extends State<HomeScreen> {
 class DetailScreen extends StatelessWidget {
   final dynamic item;
 
-  const DetailScreen({super.key, required this.item});
+  const DetailScreen({Key? key, required this.item});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 221, 17, 17),
         title: const Text('Detalles'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('Nombre: ${item['Title']}'),
-            const SizedBox(height: 10),
-            Text('Año: ${item['Year']}'),
-            Text('Editorial: ${item['Publisher']}'),
-            Text('ISBN: ${item['ISBN']}'),
-            Text('Paginas: ${item['Pages']}'),
-            Text('Villains: ${item['villains']}'),
-          ],
+      body: Container(
+        // Color de fondo para la pantalla de detalles
+        color:
+            Color.fromARGB(255, 255, 109, 25), // Cambia aquí el color de fondo
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Nombre: ${item['Title']}'),
+              const SizedBox(height: 10),
+              Text('Año: ${item['Year']}'),
+              Text('Editorial: ${item['Publisher']}'),
+              Text('ISBN: ${item['ISBN']}'),
+              Text('Paginas: ${item['Pages']}'),
+              Text('Villains: ${item['villains']}'),
+            ],
+          ),
         ),
       ),
     );
