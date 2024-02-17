@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+      "Year": "1974",
+      "Title": "Carrie",
+      "handle": "carrie",
+      "Publisher": "Doubleday",
+      "ISBN": "978-0-385-08695-0",
+      "Pages": "199",
+      "villains": "Tina Blake"
+  },
+  {
+    "id": 2,
+      "Year": "1975",
+      "Title": "Salem's Lot",
+      "handle": "salem-s-lot",
+      "Publisher": "Doubleday",
+      "ISBN": "978-0-385-00751-1",
+      "Pages": "439",
+      "villains": "Kurt Barlow"
+  }
+]
